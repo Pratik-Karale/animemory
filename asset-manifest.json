@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/animemory/static/js/main.a4d9b9ef.js",
+    "index.html": "/animemory/index.html",
+    "main.a4d9b9ef.js.map": "/animemory/static/js/main.a4d9b9ef.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a4d9b9ef.js"
+  ]
+}

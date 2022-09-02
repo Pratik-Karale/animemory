@@ -10,7 +10,11 @@ function App() {
   }
   return (
     <div className="App">
-      <Score score={score}/>
+      <div className="info-board">
+        <h1>Memory Game!</h1>
+        <p>Make sure you don't click the same card twice!</p>
+      </div>
+        <Score score={score}/>
       <Board playerLost={playerLost} incrementScore={incrementScore} score={score}/>
     </div>
   );

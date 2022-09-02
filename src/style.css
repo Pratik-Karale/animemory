@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("https://media.istockphoto.com/vectors/vector-green-plaid-fabric-background-textured-vector-id462978903?b=1&k=20&m=462978903&s=170667a&w=0&h=nmsK3f_qX4mixbMU3T68OoGTHrUXxIbyGrKoSUI04Zk=");
+    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://media.istockphoto.com/vectors/vector-green-plaid-fabric-background-textured-vector-id462978903?b=1&k=20&m=462978903&s=170667a&w=0&h=nmsK3f_qX4mixbMU3T68OoGTHrUXxIbyGrKoSUI04Zk="); */
+    text-align: center;
+    margin: 0%;
+}
+.info-board{
+    padding: 1em;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+.info-board h1{
+    margin: 0 auto auto ;
+}
+.board{
+    margin: 3rem auto;
+
+    max-width: 1000px;
+    /* padding: 0 10rem; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+}
+.card{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: antiquewhite;
+    transition: all 0.2s;
+}
+.card:hover{
+    box-shadow: 0 0 15px 4px black;
+    cursor: grab;
+}
+.card img{
+    width: 225px;
+    height: 350px;
+}
+.card p{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.score-viewer{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    margin: 3px 0;
+    padding: 1em;
+    /* margin-top: 0.5em; */
+}
+@media (max-width:1100px) {
+    .board{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .board img{
+        width: 20vw;
+        height: auto;
+    }
+}

@@ -4,9 +4,9 @@ export const Card = ({charData,onClick}) => {
   const name=Object.keys(charData)[0]
   const imgURL=charData[name]
   return (
-    <div onClick={onClick}>
+    <div onClick={onClick} className="card">
       <img src={imgURL}/>
-      <strong>{name}</strong>
+      <p>{name}</p>
     </div>
   )
 }
